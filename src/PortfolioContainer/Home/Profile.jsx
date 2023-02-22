@@ -77,7 +77,7 @@ export const Profile = () => {
                     </a>
                 </div>
             </div>
-            <div className='profie-picture' >
+            <div className='profile-picture' >
                 <div className='profile-picture-background' >
 
                 </div>
