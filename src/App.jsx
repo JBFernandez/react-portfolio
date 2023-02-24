@@ -1,16 +1,17 @@
-import { useState } from 'react'
 import './App.css'
-import { Profile } from './PortfolioContainer/Home/Profile'
+import { PortfolioContainer } from './PortfolioContainer/PortfolioContainer'
+
 
 function App() {
   
   return (
     <div className="App">
 
-      <Profile  />
+      <PortfolioContainer/>
       
     </div>
   )
 }
 
 export default App
+
