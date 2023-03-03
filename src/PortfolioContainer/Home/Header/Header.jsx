@@ -42,16 +42,16 @@ export const Header = () => {
     }
 
     const getHeaderOptionsClass = ( index ) => {
-        let classes = "header-option";
-        if( index < TOTAL_SCREENS.length-1 ) {
-            classes += "header-option-separator";
+        let classes = "header-option ";
+        if( index < TOTAL_SCREENS.length - 1 ) {
+            classes += "header-option-separator ";
         }
 
         if( selectedScreen === index ) {
-            classes += "selected-header-option"
+            classes += "selected-header-option "
         }
 
-        return;
+        return classes;
     }
 
     const switchScreen = ( index, screen ) => {
