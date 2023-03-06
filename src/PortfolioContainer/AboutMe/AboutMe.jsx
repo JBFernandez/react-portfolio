@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Animations from '../../utilities/Animations';
 import { ScreenHeading } from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/scrollService';
+import './aboutMe.css';
 
 
 
