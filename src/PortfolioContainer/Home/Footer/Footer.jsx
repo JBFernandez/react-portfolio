@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css'
 import shapebg from '../../../assets/Home/shape-bg.png';
 
-
+// No usar require, mejor usar import
 export default function Footer() {
   return (
     <div className='footer-container' >
