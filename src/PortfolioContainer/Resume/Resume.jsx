@@ -7,7 +7,7 @@ import interestssvg from '../../assets/Resume/interests.svg'
 import programmingskillssvg from '../../assets/Resume/programming-skills.svg'
 import workhistorysvg from '../../assets/Resume/work-history.svg'
 import projectssvg from '../../assets/Resume/projects.svg'
-
+import "./resume.css"
 
 
 
@@ -31,26 +31,25 @@ export const Resume = ( props ) => {
     const ResumeHeading = ( props ) => {
         return(
             <div className='resume-heading' >
-            <div className='resume-main-heading' >
-                <div className='heading-bullet' >
-                    <span> { props.heading? props.heading : "" } </span>
-                    { props.fromDate && props.toDate                    
-                        ? (
-                            <div className='heading-date' >
-                                { props.fromDate + "_" + props.toDate }
-                            </div>
-                        )
-                        : ( <div></div> )
-                    }
+                <div className='resume-main-heading' >
+                    <div className='heading-bullet' ></div>
+                        <span> { props.heading ? props.heading : "" } </span>
+                        { props.fromDate && props.toDate                    
+                            ? (
+                                <div className='heading-date' >
+                                    { props.fromDate + "-" + props.toDate }
+                                </div>
+                              )
+                            : ( <div></div> )
+                        }
+                    </div>
+                    <div className='resume-sub-heading' >
+                        <span> { props.subHeading ? props.subHeading : "" } </span>
+                    </div>
+                    <div className='resume-heading-description' >
+                        <span> { props.description ? props.description : "" } </span>
+                    </div>
                 </div>
-                <div className='resume-sub-heading' >
-                    <span> { props.subHeading ? props.subHeading : "" } </span>
-                </div>
-                <div className='resume-heading-description' >
-                    <span> { props.description ? props.description : "" } </span>
-                </div>
-            </div>
-        </div>
         )        
     }
 
@@ -162,33 +161,37 @@ export const Resume = ( props ) => {
         </div>,
 
         <div className='resume-screen-container' key="work-experience"  >
-            <ResumeHeading
-                heading={"Ehizeex Technoloy"}
-                subHeading={"FULL STACK DEVELOPER INTERN"}
-                fromDate={"2021"}
-                toDate={"Present"}
-            />
-            <div className='experience-description' >
-                <span className='resume-description-text' >
-                    Currently working as MERN stack web and mobile developer and also an online instructor on udemy.
-                </span>
+            <div className='experience-container' >
+                <ResumeHeading
+                    heading={"Ehizeex Technoloy"}
+                    subHeading={"FULL STACK DEVELOPER INTERN"}
+                    fromDate={"2021"}
+                    toDate={"Present"}
+                />
+                <div className='experience-description' >
+                    <span className='resume-description-text' >
+                        Currently working as MERN stack web and mobile developer and also an online instructor on udemy.
+                    </span>
+                </div>
+
+                <div className='experience-description' >
+                    <span className='resume-description-text' >
+                        - Developed an ecommerce website for client with the dashboard for managing the products, managing reviews, users, payment etc. .
+                    </span>
+                    <br />
+                    <span className='resume-description-text' >
+                        - Integrated the web app with backend services to create new user onboarding application with dynamic form content.
+                    </span>
+                    <br />
+                    <span className='resume-description-text' >
+                        - I stretch my mental capacity to develope UI as per the given designs.
+                    </span>
+                    <br />
+                </div>
             </div>
+        </div>,
 
-            <div className='experience-description' >
-                <span className='resume-description-text' >
-                    - Developed an ecommerce website for client with the dashboard for managing the products, managing reviews, users, payment etc. .
-                </span>
-                <br />
-                <span className='resume-description-text' >
-                    - Integrated the web app with backend services to create new user onboarding application with dynamic form content.
-                </span>
-                <br />
-                <span className='resume-description-text' >
-                    - I stretch my mental capacity to develope UI as per the given designs.
-                </span>
-            </div>,
-
-            <div className='resume-screen-container programming-skills-container' key="programming-skills" >
+        <div className='resume-screen-container programming-skills-container' key="programming-skills" >
 
                 { 
                 programmingSkillsDetails.map( ( skill, index ) => { //seguro quitaré el pocentaje
@@ -197,7 +200,7 @@ export const Resume = ( props ) => {
                             <div className='heading-bullet' ></div>
                             <span> { skill.skill } </span>
                             <div className='skill-percentage' >
-                                <div style={{ width: skill.ratingPercentage + "%" }} className="active-percentage" >
+                                <div style={{ width: skill.ratingPercentage + "%" }} className="active-percentage-bar" >
 
                                 </div>
                             </div>
@@ -205,9 +208,9 @@ export const Resume = ( props ) => {
                         )
                     } ) 
                 }
-            </div>,
+        </div>,
             
-            <div className='resume-screen-container' key="projects" >
+        <div className='resume-screen-container' key="projects" >
                 {
                     projectDetails.map( ( project, index ) => {
                         return (
@@ -222,9 +225,9 @@ export const Resume = ( props ) => {
                         )
                     } )
                 }
-            </div>,
+        </div>,
             
-            <div className='resume-screen-container' key="interests" > {/* cambiar por mi info */}
+        <div className='resume-screen-container' key="interests" > {/* cambiar por mi info */}
                 <ResumeHeading
                     heading="Teaching"
                     description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
@@ -237,7 +240,6 @@ export const Resume = ( props ) => {
                     heading="Competitive Gaming"
                     description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
                 />
-            </div>
         </div>,
     ];     
 
@@ -267,6 +269,7 @@ export const Resume = ( props ) => {
                         src={ bullet.logoSrc } 
                         alt="ooops... no internet connection" 
                     />
+                    <span className='bullet-label' > { bullet.label } </span>
                 </div>
             )
         } )
