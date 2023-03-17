@@ -48,7 +48,7 @@ export const Testimonial = (props) => {
         title={"Testimonial"}
         subHeading={"What People Say About Me"}
       />
-      <section className="testimonial-section " id={props.id || ""}>
+      <section className="testimonial-section" id={props.id || ""}>
         <div className="container">
           <div className="row">
             <OwlCarousel className="owl-carousel" id="testimonial-carousel" { ...options } >

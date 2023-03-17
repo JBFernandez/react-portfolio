@@ -1,3 +1,5 @@
+
+
 import { TOTAL_SCREENS } from "./commonUtils";
 import { Subject } from "rxjs";
 
@@ -12,7 +14,7 @@ export default class ScrollService {
     }
 
     scrollToHireMe = () => {
-        let contactMeScreen = document.getElementById("Contact Me");
+        let contactMeScreen = document.getElementById("ContactMe");
         
         if( !contactMeScreen ) return;
 

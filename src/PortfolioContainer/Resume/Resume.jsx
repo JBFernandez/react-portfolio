@@ -7,7 +7,7 @@ import interestssvg from '../../assets/Resume/interests.svg'
 import programmingskillssvg from '../../assets/Resume/programming-skills.svg'
 import workhistorysvg from '../../assets/Resume/work-history.svg'
 import projectssvg from '../../assets/Resume/projects.svg'
-import "./resume.css"
+import "./resume.css";
 
 
 
@@ -19,14 +19,14 @@ export const Resume = ( props ) => {
 
     let fadeInScreenHandler = ( screen ) => {
 
-        if( screen.fadeScreen !== props.id ) {
+        if( screen.fadeInScreen !== props.id ) {
           return      
         }
     
         Animations.animations.fadeInScreen( props.id )
       }
     
-    const fadeInSubscriptions = ScrollService.currentScreenFadeIn.subscribe( fadeInScreenHandler );
+      const fadeInSubscriptions = ScrollService.currentScreenFadeIn.subscribe( fadeInScreenHandler );
 
     const ResumeHeading = ( props ) => {
         return(
@@ -288,6 +288,7 @@ export const Resume = ( props ) => {
 
 
   return (
+    //quitar fade-in del classname de abajo 
     <div className='resume-container screen-container' id={ props.id || "" } >
         <div className='resume-content' >
             <ScreenHeading
