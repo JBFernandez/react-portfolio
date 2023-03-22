@@ -13,7 +13,14 @@ import './contactMe.css';
 
 
 
+
+
 export const ContactMe = ( props ) => {
+
+    // puede que tenga tema con el localhost
+    const api = axios.create({
+        baseURL: "https://fullstack-portfolio-lemon.vercel.app"
+    })
 
     let fadeInScreenHandler = ( screen ) => {
 
@@ -55,7 +62,8 @@ export const ContactMe = ( props ) => {
                 message
             }
             setBool( true );
-            const res = await axios.post( `/contact`, data );
+            const res = await api.post( `/contact`, data );
+            console.log(res);
             if (name.length === 0 || email.length === 0 || message.length === 0 ) {
                 setBanner(res.data.msg);
                 toast.error(res.data.msg);
@@ -64,6 +72,11 @@ export const ContactMe = ( props ) => {
                 setBanner(res.data.msg);
                 toast.success(res.data.msg);
                 setBool(false);
+
+                setName("");
+                setEmail("");
+                setMessage("");
+
             }
 
           } catch (error) {
@@ -118,6 +131,7 @@ export const ContactMe = ( props ) => {
                     <h4>Send Your Email Here!</h4>
                     <img src={ imgBack } alt="image not found" />
                 </div>
+                
                 <form onSubmit={ submitForm }>
                     <p> { banner } </p>
                     <label htmlFor="name"> Name </label>

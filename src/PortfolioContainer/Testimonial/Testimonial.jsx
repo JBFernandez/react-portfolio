@@ -6,7 +6,11 @@ import { ScreenHeading } from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./testimonial.css";
-import shape from "../../../src/assets/Testimonial/shape-bg.png"
+import shape from "../../../src/img/Testimonial/shape-bg.png"
+import lady from "../../../src/img/Testimonial/lady.png"
+import man from "../../../src/img/Testimonial/man.png"
+import mike from "../../../src/img/Testimonial/mike.png"
+import daisy from "../../../src/img/Testimonial/daisy.jpg"
 
 export const Testimonial = (props) => {
   let fadeInScreenHandler = (screen) => {
@@ -83,7 +87,7 @@ export const Testimonial = (props) => {
                     </ul>
                   </div>
                   <div className="client-info" >
-                    <img src="img/Testimonial/lady.png" alt="no internet connection" />
+                    <img src={daisy} alt="no internet connection" />
                     <h5> Daisy Dominic </h5>
                     <p>CEO InasnGlobal</p>
                   </div>
@@ -120,7 +124,7 @@ export const Testimonial = (props) => {
                     </ul>
                   </div>
                   <div className="client-info" >
-                    <img src="img/Testimonial/mike.png" alt="no internet connection" />
+                    <img src={lady} alt="no internet connection" />
                     <h5> Daisy Dominic </h5>
                     <p>CEO InasnGlobal</p>
                   </div>
@@ -157,7 +161,7 @@ export const Testimonial = (props) => {
                     </ul>
                   </div>
                   <div className="client-info" >
-                    <img src="img/Testimonial/man.png" alt="no internet connection" />
+                    <img src={man} alt="no internet connection" />
                     <h5> Daisy Dominic </h5>
                     <p>CEO InasnGlobal</p>
                   </div>
@@ -194,7 +198,7 @@ export const Testimonial = (props) => {
                     </ul>
                   </div>
                   <div className="client-info" >
-                    <img src="img/Testimonial/man.png" alt="no internet connection" />
+                    <img src={mike} alt="no internet connection" />
                     <h5> Daisy Dominic </h5>
                     <p>CEO InasnGlobal</p>
                   </div>
