@@ -63,9 +63,7 @@ export const Testimonial = (props) => {
                     <p>
                         {/* Cambiar estos testimonials */}
                         <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                        !!!!!!!
                         <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled" >
@@ -88,8 +86,8 @@ export const Testimonial = (props) => {
                   </div>
                   <div className="client-info" >
                     <img src={daisy} alt="no internet connection" />
-                    <h5> Daisy Dominic </h5>
-                    <p>CEO InasnGlobal</p>
+                    <h5> X </h5>
+                    <p>Generation Mexico</p>
                   </div>
                 </div>
               </div>
@@ -100,9 +98,7 @@ export const Testimonial = (props) => {
                     <p>
                         {/* Cambiar estos testimonials */}
                         <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      !!!!!!!
                         <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled" >
@@ -125,8 +121,8 @@ export const Testimonial = (props) => {
                   </div>
                   <div className="client-info" >
                     <img src={lady} alt="no internet connection" />
-                    <h5> Daisy Dominic </h5>
-                    <p>CEO InasnGlobal</p>
+                    <h5> X </h5>
+                    <p>Generation Mexico</p>
                   </div>
                 </div>
               </div>
@@ -137,9 +133,7 @@ export const Testimonial = (props) => {
                     <p>
                         {/* Cambiar estos testimonials */}
                         <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                       !!!!!!!
                         <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled" >
@@ -162,8 +156,8 @@ export const Testimonial = (props) => {
                   </div>
                   <div className="client-info" >
                     <img src={man} alt="no internet connection" />
-                    <h5> Daisy Dominic </h5>
-                    <p>CEO InasnGlobal</p>
+                    <h5> X </h5>
+                    <p>Generation Mexico</p>
                   </div>
                 </div>
               </div>
@@ -174,9 +168,7 @@ export const Testimonial = (props) => {
                     <p>
                         {/* Cambiar estos testimonials */}
                         <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                        !!!!!!!
                         <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled" >
@@ -199,8 +191,8 @@ export const Testimonial = (props) => {
                   </div>
                   <div className="client-info" >
                     <img src={mike} alt="no internet connection" />
-                    <h5> Daisy Dominic </h5>
-                    <p>CEO InasnGlobal</p>
+                    <h5> X </h5>
+                    <p>Generation Mexico</p>
                   </div>
                 </div>
               </div>

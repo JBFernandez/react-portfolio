@@ -11,20 +11,17 @@ import Animations from '../../utilities/Animations';
 import './contactMe.css';
 
 
-
-
-
-
 export const ContactMe = ( props ) => {
 
     // puede que tenga tema con el localhost
     const api = axios.create({
-        baseURL: "https://fullstack-portfolio-lemon.vercel.app"
+        // baseURL: "https://fullstack-portfolio-lemon.vercel.app"
+        baseURL: "http://127.0.0.1:5000/"
     })
 
     let fadeInScreenHandler = ( screen ) => {
 
-        if( screen.fadeScreen !== props.id ) {
+        if( screen.fadeInScreen !== props.id ) {
           return      
         }
     
@@ -38,7 +35,7 @@ export const ContactMe = ( props ) => {
       const [message, setMessage] = useState("");
       const [banner, setBanner] = useState("");
       const [bool, setBool] = useState(false);
-
+      
       const handleName = ( e ) => {
         setName( e.target.value );
       }
@@ -48,9 +45,6 @@ export const ContactMe = ( props ) => {
       const handleMessage = ( e ) => {
         setMessage( e.target.value );
       }
-
-      // Probablemente hay que aplicar un useEfect para que no se dispare cada que escribamos un carcter
-      console.log( name, email, message );
 
       const submitForm = async(e) => {
           e.preventDefault();
@@ -62,8 +56,9 @@ export const ContactMe = ( props ) => {
                 message
             }
             setBool( true );
+
             const res = await api.post( `/contact`, data );
-            console.log(res);
+
             if (name.length === 0 || email.length === 0 || message.length === 0 ) {
                 setBanner(res.data.msg);
                 toast.error(res.data.msg);
@@ -100,28 +95,19 @@ export const ContactMe = ( props ) => {
                 steps={[
                     "Get In Touch 📧",
                     1000,            
-
                 ]}                            
                 />
             </h2>
 
-                <a href="https://www.facebook.com/coco.fernandez.330">
-                    <i className='fa fa-facebook-square' ></i>
+                <a href="https://github.com/JBFernandez">
+                    <i className='fa fa-github-square' ></i>
                 </a>
                 
-                <a href="">
-                    <i className='fa fa-google-plus-square' ></i>
-                </a>
-                
-                <a href="">
-                    <i className='fa fa-instagram' ></i>
-                </a>
-                
-                <a href="">
-                    <i className='fa fa-youtube-square' ></i>
+                <a href="https://www.linkedin.com/in/jose-bernardo-fernandez-sanjurjo/">
+                    <i className='fa fa-linkedin-square' ></i>
                 </a>
 
-                <a href="">
+                <a href="https://twitter.com/JBernardoFernn1">
                     <i className='fa fa-twitter' ></i>
                 </a>
 

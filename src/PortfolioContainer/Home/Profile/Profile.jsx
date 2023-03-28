@@ -2,6 +2,7 @@ import React from 'react';
 import Typical from 'react-typical';
 import ScrollService from '../../../utilities/ScrollService';
 import './profile.css';
+import resumePDF from '../../../assets/Resume/JoseBernardoCV.pdf';
 
 
 
@@ -13,24 +14,16 @@ export const Profile = () => {
             <div className='profile-details' >
                 <div className='colz' >
                     <div className='colz-icon' >
-{/* modificar iconos de face, insta etc */}
-                        <a href="https://www.facebook.com/coco.fernandez.330">
-                            <i className='fa fa-facebook-square' ></i>
+                        
+                        <a href="https://github.com/JBFernandez">
+                            <i className='fa fa-github-square' ></i>
                         </a>
                         
-                        <a href="">
-                            <i className='fa fa-google-plus-square' ></i>
-                        </a>
-                        
-                        <a href="">
-                            <i className='fa fa-instagram' ></i>
-                        </a>
-                        
-                        <a href="">
-                            <i className='fa fa-youtube-square' ></i>
+                        <a href="https://www.linkedin.com/in/jose-bernardo-fernandez-sanjurjo/">
+                            <i className='fa fa-linkedin-square' ></i>
                         </a>
 
-                        <a href="">
+                        <a href="https://twitter.com/JBernardoFernn1">
                             <i className='fa fa-twitter' ></i>
                         </a>
 
@@ -65,7 +58,7 @@ export const Profile = () => {
                             />
                         </h1>
                         <span className='profile-role-tagline' >
-                            Knack of building applications with front and back end operations.
+                            Knack of building applications with front and back-end operations.
                         </span>
                     </span>
                 </div>
@@ -77,7 +70,7 @@ export const Profile = () => {
                         {""}
                         Hire Me{" "}
                     </button>
-                    <a href="JoseBernardoCV.pdf" download="joseCV.pdf" >
+                    <a href={ resumePDF } download="joseCV.pdf" >
                         <button className='btn highlighted-btn' > Get Resume </button>
                     </a>
                 </div>

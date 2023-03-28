@@ -3,6 +3,7 @@ import Animations from '../../utilities/Animations';
 import { ScreenHeading } from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import './aboutMe.css';
+import resumePDF from '../../../src/assets/Resume/JoseBernardoCV.pdf';
 
 
 
@@ -20,15 +21,14 @@ export const AboutMe = ( props ) => {
   const fadeInSubscriptions = ScrollService.currentScreenFadeIn.subscribe( fadeInScreenHandler );
 
   const SCREEN_CONST = {
-    description: "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+    description: "Full stack web developer with background knowledge of MERN stacks with redux, Java, SQL, along with a knack of building applications with utmost efficiency. Strong professional with a BSC in Mechatronics Engineering willing to be an asset for an organization.",
     highlights: {
       bullets: [
-        "Full Stack web and mobile development",
-        "Interactive Front End as per the design",
-        "React and React Native",
-        "Redux for State Mnanagement",
-        "Building REST API",
-        "Managing database",
+        "Full Stack web development",
+        "React",
+        "Redux for State Management",
+        "Building REST APIs with Java",
+        "Databases with SQL and MySQL Workbench",
       ],
       heading: "Here are a few highlights"
     }
@@ -79,7 +79,7 @@ export const AboutMe = ( props ) => {
                         {""}
                         Hire Me{" "}
                     </button>
-                    <a href="JoseBernardoCV.pdf" download="joseCV.pdf" >
+                    <a href={ resumePDF } download="joseCV.pdf" >
                         <button className='btn highlighted-btn' > Get Resume </button>
                     </a>
             </div>
