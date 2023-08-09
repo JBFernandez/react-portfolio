@@ -81,7 +81,7 @@ export const ContactMe = ( props ) => {
 
   return (
 
-    <div className='main-container' id={ props.id || '' } >
+    <div className='main-container screen-container fade-in' id={ props.id || '' } >
         <ScreenHeading 
             subHeading={"Lets Keep In Touch"}
             title={ 'Contact Me' }

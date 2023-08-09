@@ -125,10 +125,10 @@ export const Resume = ( props ) => {
             subHeading: "Technologies Used: MERN stack, Bootstrap",
         },
         {
-            title: "",
-            duration: { fromDate: "2020", toDate: "2021" },
-            description: "",
-            subHeading: "",
+            title: "MERN Calendar App",
+            duration: { fromDate: "2022", toDate: "2022" },
+            description: "A fullstack calendar app, where you can login to your calendar and create new events",
+            subHeading: "Technologies Used: MERN stack, Redux Toolkit, React Router",
         },
         {
             title: "Ecommerce Website ",
@@ -142,7 +142,7 @@ export const Resume = ( props ) => {
         <div className='resume-screen-container' key="education"  >
             <ResumeHeading 
                 heading={"Generation Mexico"}
-                subHeading={"Java Bootcamp Developer Bootcamp"}
+                subHeading={"Java Fullstack Developer Bootcamp"}
                 fromDate={"2021"}
                 toDate={"2021"}
             />
@@ -159,37 +159,6 @@ export const Resume = ( props ) => {
                 toDate={"2015"}
             />
         </div>,
-
-        // <div className='resume-screen-container' key="work-experience"  >
-        //     <div className='experience-container' >
-        //         <ResumeHeading
-        //             heading={"Ehizeex Technoloy"}
-        //             subHeading={"FULL STACK DEVELOPER INTERN"}
-        //             fromDate={"2021"}
-        //             toDate={"Present"}
-        //         />
-        //         <div className='experience-description' >
-        //             <span className='resume-description-text' >
-        //                 Currently working as MERN stack web and mobile developer and also an online instructor on udemy.
-        //             </span>
-        //         </div>
-
-        //         <div className='experience-description' >
-        //             <span className='resume-description-text' >
-        //                 - Developed an ecommerce website for client with the dashboard for managing the products, managing reviews, users, payment etc. .
-        //             </span>
-        //             <br />
-        //             <span className='resume-description-text' >
-        //                 - Integrated the web app with backend services to create new user onboarding application with dynamic form content.
-        //             </span>
-        //             <br />
-        //             <span className='resume-description-text' >
-        //                 - I stretch my mental capacity to develope UI as per the given designs.
-        //             </span>
-        //             <br />
-        //         </div>
-        //     </div>
-        // </div>,
 
         <div className='resume-screen-container programming-skills-container' key="programming-skills" >
 
@@ -289,7 +258,7 @@ export const Resume = ( props ) => {
 
   return (
     //quitar fade-in del classname de abajo 
-    <div className='resume-container screen-container' id={ props.id || "" } >
+    <div className='resume-container screen-container fade-in' id={ props.id || "" } >
         <div className='resume-content' >
             <ScreenHeading
                 title={ 'Resume' }
