@@ -2,7 +2,7 @@ import React from 'react';
 import Typical from 'react-typical';
 import ScrollService from '../../../utilities/ScrollService';
 import './profile.css';
-import resumePDF from '../../../assets/Resume/JoseBernardoCV.pdf';
+import resumePDF from '../../../assets/Resume/joseCV.pdf';
 
 
 
@@ -70,7 +70,7 @@ export const Profile = () => {
                         {""}
                         Hire Me{" "}
                     </button>
-                    <a href={ resumePDF } download="joseCV.pdf" >
+                    <a href={ resumePDF } download="Jose Fernandez - CV.pdf" >
                         <button className='btn highlighted-btn' > Get Resume </button>
                     </a>
                 </div>

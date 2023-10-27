@@ -3,11 +3,12 @@ import Animations from '../../utilities/Animations';
 import { ScreenHeading } from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import './aboutMe.css';
-import resumePDF from '../../../src/assets/Resume/JoseBernardoCV.pdf';
+import resumePDF from '../../../src/assets/Resume/joseCV.pdf';
 
 
 
 export const AboutMe = ( props ) => {
+
 
   let fadeInScreenHandler = ( screen ) => {
 
@@ -79,7 +80,7 @@ export const AboutMe = ( props ) => {
                         {""}
                         Hire Me{" "}
                     </button>
-                    <a href={ resumePDF } download="Jose-FernandezCV.pdf" >
+                    <a href={ resumePDF } download="Jose Fernandez - CV.pdf" >
                         <button className='btn highlighted-btn' > Get Resume </button>
                     </a>
             </div>
