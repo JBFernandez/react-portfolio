@@ -2,7 +2,7 @@ import React from 'react';
 import Typical from 'react-typical';
 import ScrollService from '../../../utilities/ScrollService';
 import './profile.css';
-import resumePDF from '../../../assets/Resume/joseCV.pdf';
+import resumePDF from '../../../assets/Resume/Jose Fernandez - CV.pdf';
 
 
 

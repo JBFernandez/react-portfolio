@@ -3,7 +3,7 @@ import Animations from '../../utilities/Animations';
 import { ScreenHeading } from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import './aboutMe.css';
-import resumePDF from '../../../src/assets/Resume/joseCV.pdf';
+import resumePDF from '../../../src/assets/Resume/Jose Fernandez - CV.pdf';
 
 
 
